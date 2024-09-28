@@ -1,0 +1,12 @@
+{
+  "name":"wdev/vagas",
+  "version": "8",
+  "description": "The Laravel Framework.",
+  "keywords": ["framework", "laravel"],
+  "license": "MIT",
+  "autoload":{
+    "psr-4":{
+      "App\\":"app/"
+    }
+  }
+}
