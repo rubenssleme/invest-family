@@ -6,7 +6,7 @@ use \App\Controller\Pages\Header;
 use \App\Controller\Pages\Footer;
 
 use \App\Entity\Vaga;
-//$vagas = Vaga::getVagas();
+$vagas = Vaga::getVagas();
 
 
 //include __DIR__.'/includes/header.php';

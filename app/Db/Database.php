@@ -17,7 +17,7 @@ class Database{
    * Nome do banco de dados
    * @var string
    */
-  const NAME = 'invest_family';
+  const NAME = 'teste';
 
   /**
    * Usuário do banco
@@ -108,7 +108,7 @@ class Database{
    * @param  string $fields
    * @return PDOStatement
    */
-  public function select($where = null, $order = null, $limit = null, $fields = '*'){
+  public function select($where = '*', $order = '*', $limit = '*', $fields = '*'){
     //DADOS DA QUERY
     $where = strlen($where) ? 'WHERE '.$where : '';
     $order = strlen($order) ? 'ORDER BY '.$order : '';
