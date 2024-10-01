@@ -3,13 +3,13 @@ namespace app\Controller\Pages;
 
 use \App\Utils\View;
 
-class Home {
+class Header{
     /**
-     * Retorna a Home
+     * Retorna a conteudo da pagina generica
      * 
      */
-    public static function getHome(){
-        return  View::render('pages/home',[
+    public static function getHeader(){
+        return  View::render('pages/header',[
             'name' => 'INVEST Family Rubens',
             'description' => 'Gerenciador dos Investimento Familiares'
         ]);
