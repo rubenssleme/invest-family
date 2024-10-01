@@ -18,14 +18,22 @@ private static function getContentView($view){
 /**
  * Retoprna o conteudo renderizado de uma View
  * @parm string $view
+ * @parm array $vars (string/numeric)
  * return string 
  */
-public static function render($view){
-    /**
-     * Conteudo da View
-     */
-    $contentView = self::getContentView($view);
-    return $contentView;
-}
+    public static function render($view, $vars = []){
+        /**
+         * Conteudo da View
+         */
+        $contentView = self::getContentView($view);
+
+        // Chaves 
+        $keys = array_keys($vars);
+        $keys = array_map(function($item){
+        return '{{'.$item.'}}';
+        },$keys);
+   
+        return str_replace($keys,array_values($vars),$contentView);
+    }
 
 }
