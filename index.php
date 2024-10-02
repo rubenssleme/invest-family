@@ -5,8 +5,10 @@ require __DIR__.'/vendor/autoload.php';
 use \App\Controller\Pages\Header;
 use \App\Controller\Pages\Footer;
 
-use \App\Entity\Vaga;
-$vagas = Vaga::getVagas();
+//use \App\Entity\Vaga;
+//$vagas = Vaga::getVagas();
+use \App\Entity\Carteira;
+$carteiras = Carteira::getCarteiras();
 
 
 //include __DIR__.'/includes/header.php';
