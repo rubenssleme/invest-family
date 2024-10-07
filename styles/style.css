@@ -198,14 +198,15 @@ coluna2{
 
 footer {
     position: absolute;
+    top: 686px;
     bottom: 100;
     background-color: #026773;
     color: #FFF;
     width: 100%; 
     text-align: center;
-    line-height: 40px;
-    display: flex;
-    flex-direction: column;
+    line-height: 15px;
+    display: inline-flex;
+    flex-direction:column;
     align-items: center;
     
 }

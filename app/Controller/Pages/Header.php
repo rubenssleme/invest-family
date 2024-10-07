@@ -11,7 +11,7 @@ class Header{
     public static function getHeader(){
         return  View::render('pages/header',[
             'name' => 'INVEST<br>Family',
-            'description' => 'Gerenciador dos Investimento Familiares'
+            'description' => 'Gerenciador de Investimentos Familiares'
         ]);
     
     }

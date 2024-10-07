@@ -10,8 +10,8 @@ class Footer{
      */
     public static function getFooter(){
         return  View::render('pages/footer',[
-            'name' => 'INVEST Family Rubens',
-            'description' => 'Gerenciador dos Investimento Familiares'
+            'name' => 'INVEST Family',
+            'description' => 'Gerenciador de Investimentos Familiares'
         ]);
     
     }
